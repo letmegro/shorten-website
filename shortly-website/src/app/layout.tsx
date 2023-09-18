@@ -1,7 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import s from "../../public/images/favicon-32x32.png"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""/>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
         <link rel='shortcut icon'  type='image/png' href="images/favicon-32x32.ico"/>
       </head>
