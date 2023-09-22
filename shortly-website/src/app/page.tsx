@@ -14,7 +14,9 @@ form
 //@ts-ignore
 import navToggle from './toggleScript.tsx';
 navToggle
+
 export default function Home() {
+  
   return (
     <main>
       {/* nav */}
@@ -84,7 +86,7 @@ export default function Home() {
         <div className='max-w-4xl mx-auto p-6 space-y-6'>
           <form id='link-form' className='relative flex flex-col w-full p-10 -mt-20 space-y-4 bg-darkViolet rounded-lg md:flex-row md:space-y-0 md:space-x-3'>
             <input id='link-input' type='text' className='flex-1 p-3 border-2 rounded-lg placeholder-yellow-500 focus:outline-none' placeholder='Shorten URL'/>
-            <button className='px-10 py-3 text-white bg-cyan rounded-lg hover:bg-cyanLight focus:outline-none md:py-2'>
+            <button id='shorten-btn' className='px-10 py-3 text-white bg-cyan rounded-lg hover:bg-cyanLight focus:outline-none md:py-2'>
               Shorten
             </button>
             {/* error message div */}
