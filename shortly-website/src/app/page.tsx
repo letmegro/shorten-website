@@ -94,18 +94,28 @@ export default function Home() {
           </form>
           {/* links */}
           {/* link 1 */}
-          <div className='flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row'>
-            <p className='font-bold text-center text-veryDarkViolet md:text-left'>
-              https://frontendmentor.io
+          <div id='linkContainer' className='hidden flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row'>
+            <p id='ogLink' className='font-bold text-center text-veryDarkViolet md:text-left'>
+              {/* original link */}
             </p>
             <div className='flex-col flex items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0'>
-              <div className='font-bold text-cyan'>
-                https://rel.ink/k4IKyk
+              <div id='shortenedLink' className='font-bold text-cyan'>
+                {/* shortened link */}
               </div>
-              <button className='p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none'>
+              <button id='copyBtn' className='p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none'>
                 Copy
               </button>
             </div>
+          </div>
+          <div id='loader' className='hidden mx-auto flex-col items-center justify-between w-full p-6 rounded-lg'>
+            <span className='i1'></span>
+            <span className='i2'></span>
+            <span className='i3'></span>
+            <span className='i4'></span>
+            <span className='i5'></span>
+            <span className='i6'></span>
+            <span className='i7'></span>
+            <span className='i8'></span>
           </div>
         </div>
       </section>
