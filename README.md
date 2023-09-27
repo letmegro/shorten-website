@@ -25,3 +25,4 @@ to run your client in a different terminal add the following
 `npm run dev`
 
 Now you're ready to use the website
+
