@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"next dev\" \"python ./api/server.py\"",
-    "build": "next build",
+    "build": "concurrently \"next build\" \"pip install -r requirements.txt\"",
     "start": "concurrently \"next start\" \"python ./api/server.py\"",
     "lint": "next lint"
   },
